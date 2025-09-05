@@ -60,6 +60,8 @@
 - main/boards/common/board.cc
 - main/display/display.h
 - main/display/display.cc
+- main/display/lcd_display.h
+- main/display/lcd_display.cc
 - main/application.h
 - main/application.cc
 - main/idf_component.yml

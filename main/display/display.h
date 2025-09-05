@@ -32,6 +32,9 @@ public:
     virtual std::string GetTheme() { return current_theme_name_; }
     virtual void UpdateStatusBar(bool update_all = false);
     virtual void SetPowerSaveMode(bool on);
+    virtual void start() {}
+    virtual void clearScreen() {}  // 清除FFT显示，默认为空实现
+    virtual void stopFft() {}      // 停止FFT显示，默认为空实现
 
     inline int width() const { return width_; }
     inline int height() const { return height_; }
