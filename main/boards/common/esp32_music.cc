@@ -407,7 +407,7 @@ bool Esp32Music::Download(const std::string &song_name, const std::string &artis
                     cJSON *artist = cJSON_GetObjectItem(min_item, "singer");
                     cJSON *title = cJSON_GetObjectItem(min_item, "song");
                     cJSON *music_url = cJSON_GetObjectItem(min_item, "music_url");
-                    cJSON *audio_url = music_url ? cJSON_GetObjectItem(music_url, "standard") : nullptr;
+                    cJSON *audio_url = music_url ? cJSON_GetObjectItem(music_url, "audition") : nullptr;
                     cJSON *lyric = cJSON_GetObjectItem(min_item, "lyric");
                     cJSON *lyric_url = lyric ? cJSON_GetObjectItem(lyric, "lrc") : nullptr;
                     if (cJSON_IsString(artist))
@@ -848,7 +848,7 @@ void Esp32Music::PlayAudioStream()
                         { return buffer_size_ >= MIN_BUFFER_SIZE || (!is_downloading_ && !audio_buffer_.empty()); });
     }
 
-    ESP_LOGI(TAG, "小智开源音乐固件qq交流群:826072986");
+    ESP_LOGI(TAG, "喵波音律QQ交流群:865754861");
     ESP_LOGI(TAG, "Starting playback with buffer size: %d", buffer_size_);
 
     size_t total_played = 0;
